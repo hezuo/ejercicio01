@@ -1,6 +1,7 @@
 package com.example.ejercicio01;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -26,7 +27,8 @@ public class Pantalla1  extends Activity implements OnClickListener {
 			String texto ="PR_UEBA";
 			Toast.makeText(getApplicationContext(), texto, Toast.LENGTH_SHORT).show();
 		} else if(v.equals(boton2)){
-			
+			Intent i = new Intent(this, Pantalla2.class);
+			startActivity(i);
 		}
 	}
 
